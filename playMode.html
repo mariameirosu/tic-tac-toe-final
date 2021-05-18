@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Play mode</title>
+    <style>
+      body {
+        background-image: url("./Screenshot\ 2021-05-15\ at\ 11.55.12.png");
+        width: 100vw;
+        height: 100vh;
+        font-family: "Pangolin", cursive;
+        margin: 0%;
+      }
+      .container {
+        width: 100vw;
+        height: 100vh;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: space-evenly;
+          
+      } 
+      .tic-tac-toe {
+          display: flex;
+          -webkit-text-stroke: 2px black;
+        text-shadow: 0 0 5px #fff, 0 0 5px #fff, 0 0 10px #5df013,
+          0 0 15px #5df013, 0 0 20px #5df013, 0 0 25px #5df013, 0 0 30px #5df013;
+        font-size: 5vw;
+        color: white;
+        }
+
+        .welcome-text {
+          display: flex;
+        font-size:3vw;
+          color: white;
+          -webkit-text-stroke: 2px black;
+          /* text-shadow: 0 0 2px #fff, 0 0 4px #fff, 0 0 6px #F013EB,
+          0 0 8px #F013EB, 0 0 10px #F013EB, 0 0 12px #F013EB, 0 0 14px #F013EB; */
+          border-top: solid #5DF013 3px;
+          border-bottom: solid #5DF013 3px;
+          box-shadow: 0 0 5px #fff, 0 0 5px #fff, 0 0 7px #5DF013,
+          0 0 9px #5DF013, 0 0 11px #5DF013, 0 0 13px #5DF013, 0 0 15px #5DF013;
+          width: 120vw;
+          margin: 0%;
+          flex-direction: column;
+          align-items: center;
+          justify-content: space-evenly;
+          text-orientation: sideways-right;
+        
+       
+        background: rgb(42, 0, 71);
+      }
+     
+      .buttons {
+          display: flex;
+          width: 80vw;
+          height: 30vh;
+          flex-direction: column;
+          justify-content: space-between;
+          align-items: center;
+          align-content: center;
+      }
+      .btn-outline-warning {
+        font-family: "Pangolin", cursive!important;
+        color: white!important;
+        background: rgb(42, 0, 71);
+        width: 40vw;
+        height: 10vh;
+        font-size: 3vw;
+        border: solid #F013EB 3px;
+        border-radius: 10px;
+        box-shadow: 0 0 5px #fff, 0 0 5px #fff, 0 0 10px #F013EB,
+          0 0 10px #F013EB, 0 0 15px #F013EB, 0 0 20px #F013EB, 0 0 25px #F013EB;
+        -webkit-text-stroke: 2px black;
+        /* text-shadow: 0 0 3px #fff, 0 0 4px #fff, 0 0 5px #5DF013,
+          0 0 6px #5DF013, 0 0 7px #5DF013, 0 0 8px #5DF013, 0 0 9px #5DF013;  */
+      }
+    </style>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="tic-tac-toe">TIC - TAC - TOE</div>
+      <div class="welcome-text">
+        Please choose game mode:
+      </div>
+      <div class="buttons">
+        <button type="button" class="btn btn-outline-warning">PLAY WITH COMPUTER</button>
+        <button type="button" class="btn btn-outline-warning">PLAY WITH A FRIEND</button> 
+    </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./welcomePage.js"></script>
+  </body>
+</html>
